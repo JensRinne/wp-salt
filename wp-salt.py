@@ -40,6 +40,12 @@ if __name__ == "__main__":
         spaces = ' ' * padding[constant]
         print(f"define('{constant}',{spaces}'{value}');")
 
+# Fenster offen halten, wenn das Script direkt ausgeführt wird (z.B. per Doppelklick)
+    try:
+        input("\nPress Enter to exit...")
+    except EOFError:
+        pass
+
 def generate_random_string(length=64):
     """
     Generates a secure, random string of a given length that is compatible with PHP KEY/SALT defines
