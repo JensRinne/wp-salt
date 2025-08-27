@@ -40,22 +40,12 @@ if __name__ == "__main__":
         spaces = ' ' * padding[constant]
         print(f"define('{constant}',{spaces}'{value}');")
 
-# Fenster offen halten, wenn das Script direkt ausgeführt wird (z.B. per Doppelklick)
+
+# Fenster offen halten, wenn das Script direkt ausgeführt wird (z.B. per Doppelklick oder Tool Launcher)
     try:
         input("\nPress Enter to exit...")
     except EOFError:
         pass
-
-def generate_random_string(length=64):
-    """
-    Generates a secure, random string of a given length that is compatible with PHP KEY/SALT defines
-    in the wp-config.php file.
-    Uses the method described here: https://stackoverflow.com/a/23728630/489667
-    The random strings returned from https://api.wordpress.org/secret-key/1.1/salt/ are 64 characters long.
-
-    :param length: the length of the string to generate (defaults to 64, same as Wordpress seems to use)
-    :return: a secure, random string of the requested length that is compatible with a PHP define
-    """
 
 
 
