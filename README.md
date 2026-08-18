@@ -2,9 +2,34 @@
 
 This script generates fresh WordPress SALT keys in the correct `define()` format for use in your `wp-config.php` file. The output is formatted to match the official WordPress style, so you can copy and paste it directly.
 
+## Requirements
+
+- Python 3.11 or newer (recommended)
+- No third-party Python packages or external programs
+
+## Installation
+
+### Windows PowerShell
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+### Linux/macOS
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
 ## Usage
 
-Run the script with Python 3:
+With the virtual environment activated, run:
 
 ```sh
 python wp-salt.py

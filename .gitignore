@@ -5,6 +5,8 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+.venv/
+venv/
 env/
 build/
 develop-eggs/
@@ -24,6 +26,9 @@ var/
 # VS Code
 .vscode/
 
+# JetBrains IDEs
+.idea/
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
@@ -36,6 +41,12 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environment files
+.env
+.env.*
 
 # Jupyter Notebook
 .ipynb_checkpoints
